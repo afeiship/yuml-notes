@@ -9,3 +9,8 @@
 [User_Role|id;user_id;role_id]
 [User]1-N>[User_Role]
 [Role]1-N>[User_Role]
+
+// # Cool UML Diagram
+[Customer]+1-<>[Order]
+[Order]++1-items <>[LineItem]
+[Order]-0..1>[PaymentMethod]  
