@@ -1,6 +1,11 @@
 // {type:class}
+// Has many books:
+[Author|published_at]
+[Book|name;author_id]
+[Author]1-N>[Book]
 
-[Customer|-forname:string;surname:string|doShiz()]<>-orders*>[Order]
-[Order]++-0..*>[LineItem]
-[Order]-[note:Aggregate root{bg:wheat}]
-
+[User|name;password;email]
+[Role|code;name;description]
+[User_Role|id;user_id;role_id]
+[User]1-N>[User_Role]
+[Role]1-N>[User_Role]
