@@ -1,0 +1,7 @@
+// {type:deployment}
+
+[node1]
+[node1]-[node2]
+[node1]label-[node2]
+[node1]-[note: a note for node1 here]
+[node2]-[note: a note for node2 here]
